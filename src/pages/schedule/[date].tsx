@@ -4,7 +4,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
 type Props = {
-  artistData: string[];
+  dates: string[];
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -19,7 +19,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   await getDocs(paramsCol).then((res) => {
     paths = res.docs.map((doc) => ({
       params: {
-        artist: doc.data().value,
+        date: doc.data().value,
       },
     }));
   });
@@ -38,16 +38,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   });
   return {
     props: {
-      artistData: req,
+      dates: req,
     },
   };
 };
 
-const ScheduleDates = ({ artistData }: Props) => {
+const ScheduleDates = ({ dates }: Props) => {
   return (
     <div>
-      {artistData.map((artist) => (
-        <p key={artist}>{artist}</p>
+      {dates.map((date) => (
+        <p key={date}>{date}</p>
       ))}
     </div>
   );
