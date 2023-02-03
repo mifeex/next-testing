@@ -1,5 +1,5 @@
 import * as React from 'react';
-import lineupData from '@/components/lineupData';
+import lineupData from '@/common/data/lineupData';
 
 const useSortedDates = () => {
   const sortedData = lineupData.sort((a, b) => (a.date < b.date ? -1 : 1));

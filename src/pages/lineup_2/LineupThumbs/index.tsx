@@ -1,6 +1,6 @@
 import * as React from 'react';
 import LineupThumb from '../LineupThumb';
-import { LineupCard } from '../../../components/lineupData';
+import { LineupCard } from '../../../common/data/lineupData';
 import styles from './style.module.css';
 
 type Props = {
