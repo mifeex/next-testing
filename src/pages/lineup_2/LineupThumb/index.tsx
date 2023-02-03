@@ -1,6 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
-import { LineupCard } from "../lineupData";
+import { LineupCard } from "../../../components/lineupData";
 import { getDate } from "@/common/utils";
 import cn from "@/common/cn";
 import styles from "./style.module.css";

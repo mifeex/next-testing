@@ -1,6 +1,6 @@
 import * as React from "react";
 import LineupThumbs from "./LineupThumbs";
-import lineupData from "./lineupData";
+import lineupData from "../../components/lineupData";
 import { getDate } from "@/common/utils";
 import useSortedDates from "@/common/hooks/useSortedDates";
 import LineupMeta from "./LineupMeta";

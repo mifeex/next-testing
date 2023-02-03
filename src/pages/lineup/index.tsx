@@ -1,7 +1,7 @@
 import axios from "axios";
 import styles from "./style.module.css";
 import Link from "next/link";
-import { TUsers } from "./type";
+import { TUsers } from "../../common/types/type";
 import LineupMeta from "./LineupMeta";
 
 type Props = {

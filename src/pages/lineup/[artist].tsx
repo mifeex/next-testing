@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import axios from "axios";
-import { TUsers } from "./type";
+import { TUsers } from "../../common/types/type";
 import GuyJ from "public/images/artists/boris_brejcha.webp";
 import styles from "./style.module.css";
 import Link from "next/link";
