@@ -1,0 +1,10 @@
+.lineup-thumb {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.imgae-container {
+    width: 242px;
+    min-height: 300px;
+}

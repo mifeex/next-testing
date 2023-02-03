@@ -1,0 +1,31 @@
+.artist {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    margin-left: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 1800px;
+    width: 100%;
+}
+
+.images {
+    /* bottom: 0; */
+}
+
+.image-container {
+    position: relative;
+    width: 640px;
+    height: 320px;
+}

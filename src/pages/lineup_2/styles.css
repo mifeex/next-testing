@@ -1,0 +1,98 @@
+.lineup-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__title {
+    display: inline-flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--header-height);
+    z-index: 2;
+    background: var(--violet) no-repeat;
+    background-size: cover;
+    background-position: top calc(var(--header-height) * -1) center;
+    background-image: url('/src/layouts/MainLayout/images/background_mobile.jpg');
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (--desktop-s) {
+      position: relative;
+      top: 0;
+      padding: 0 var(--h-page-padding405);
+      background: none;
+    }
+
+    h1 {
+      margin-bottom: 0;
+
+      @media (--tablet-s) {
+        font-size: 36px;
+      }
+
+      @media (--desktop-m) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__tooltip {
+    margin-left: 8px;
+  }
+
+  &__navigator {
+    @media (--desktop-s) {
+      position: absolute;
+      left: 20px;
+      top: 74px;
+    }
+  }
+
+  &__thumbs-wrapper {
+    height: 100%;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @media (--desktop-s) {
+      margin-top: 0;
+    }
+  }
+
+  &__date {
+    margin: 16px;
+    text-align: center;
+    color: var(--text-accent);
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 5" ><line x1="0" y1="2" x2="1244" y2="2" stroke="yellow" /><line x1="1316" y1="2" x2="2560" y2="2" stroke="yellow" /></svg>')
+      center / 2560px no-repeat;
+
+    @media (--tablet-s) {
+      width: 702px;
+      margin: 16px auto;
+    }
+
+    @media (--tablet) {
+      width: 940px;
+    }
+
+    @media (--desktop-m) {
+      width: 1194px;
+    }
+
+    @media (--desktop-l) {
+      width: 1602px;
+    }
+  }
+
+  &__info-paragraph {
+    width: 234px;
+
+    @media (--tablet) {
+      width: 438px;
+    }
+  }
+}
